@@ -9,13 +9,13 @@ $title = "Delete Users";
 include "includes/header.php";
 include "includes/db.php";
 
-$userDeleted = false; // Define the variable outside the if block
+$userDeleted = false; 
 $usernameToDelete = '';
 
 if (isset($_GET['id'])) {
     $user_id = $_GET['id'];
 
-    // Retrieve the username of the user to be deleted
+    // Retrieves the username of the user to be deleted
     $stmt = $pdo->prepare("SELECT user_name FROM Users WHERE user_id = ?");
     $stmt->execute([$user_id]);
     $user = $stmt->fetch();
