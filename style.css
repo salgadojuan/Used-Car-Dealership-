@@ -1,0 +1,331 @@
+
+
+/* This is the style for displaying the user logged in */
+.logged-in-user {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+/* Adjust the site-header to align text properly */
+.site-header {
+    background-color: rgb(28, 25, 120);
+    color: white;
+    text-align: center;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-title {
+    font-size: 40px;
+    margin: 0;
+    padding-left: 200px; /* Adjust this value as needed to move the text to the right */
+    
+}
+
+.site-navigation ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.site-navigation ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.site-navigation ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 40px; /* button grows horizontally */
+    background-color: rgb(10, 27, 181); /* Blue background for the links */
+    border-style: outset;
+    transition: background-color 0.3s ease; /* Smooth transition for the background color change */
+}
+
+.site-navigation ul li a:hover {
+    background-color: rgb(5, 118, 255); /* Lighter blue on hover */
+}
+
+
+.main-content {
+    text-align: center; /* This selector centers the content of the main area, making it visually balanced. */
+    
+    margin-left: 200px;     /* new line */
+}
+
+.centered-image {
+    display: inline-block; /* new line */
+    margin: 0 auto;
+
+
+    max-width: 100%; /* Ensures the image scales responsively with the browser window size. */
+    height: auto; /* Maintains the aspect ratio of the image as it scales. */
+}
+
+.footer-text, footer p  {
+    text-align: center;
+    margin-top: 20px; /* Adds vertical space above the footer content for better visual separation. */
+}
+
+.footer-divider {
+    width: 95%; /* Sets the width of the horizontal rule to 50% of its container */
+    margin: 50 auto; /* Centers the <hr> horizontally */
+    border-top: 1px solid #00000062; /* Sets the color and thickness of the <hr> */
+    margin-top: 50px;
+}
+
+/*....................................login...................................*/
+
+
+.login-container {
+    width: 300px;
+    margin: 20px auto;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.h2-center{
+    text-align: center;
+    color: rgb(28, 25, 120);
+    margin-left: 200px;/* new line */
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-button {
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: rgb(200, 200, 206);
+}
+
+/* .............................................Dashboard page........................... */
+
+/* Remade from selector ".site-navigation" */
+
+.side-navigation {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+.side-navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-navigation ul li {
+    margin-bottom: 10px;
+}
+
+.side-navigation ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(10, 27, 181); /* Blue background for the links */
+    border-style: outset;
+    transition: background-color 0.3s ease; /* Smooth transition for the background color change */
+}
+
+.side-navigation ul li a:hover {
+    background-color: rgb(5, 118, 255); /* Lighter blue on hover */
+}
+
+
+
+
+
+/* ..........................form add user............................. */
+
+/* message of user added to database centered */
+.success-message {
+    text-align: center;
+    font-weight: bold;
+    color: green; /* Optional: Add a color to make it stand out */
+    margin-top: 10px;
+}
+
+
+
+/* Center the register form */
+.register-container {
+    width: 50%; /* Adjust the width as necessary */
+    margin: 0 auto; /* Center the form */
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.register-button {
+    width: 10%;
+    padding: 10px;
+    background-color: rgb(38, 56, 136);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: rgb(111, 140, 178);
+}
+
+
+
+/* ................................delete users............................................. */
+
+.success-message {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.delete-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.delete-form button {
+    margin: 0 10px; /* Add some space between the buttons */
+}
+
+
+
+
+/* .........................Edit users....................................................... */
+
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.register-button {
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: darkblue;
+}
+
+
+
+/* .................................manage users....................................... */
+
+
+/* centers the logged in user */
+.centered-user-message {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+/* Center the main content */
+.main-content {
+    text-align: center;
+}
+
+/* Style the users table */
+.users-table {
+    margin: 0 auto; /* Center the table */
+    border-collapse: collapse;
+    width: 80%; /* Adjust the width as needed */
+}
+
+.users-table th, .users-table td {
+    border: 1px solid #000; /* Add a border */
+    padding: 8px; /* Add padding */
+    text-align: left; /* Align text to the left */
+}
+
+.users-table th {
+    background-color: rgb(86, 86, 250); /* Blue background for header */
+    color: white; /* White text for header */
+}
+
+.users-table td {
+    background-color: white; /* White background for rows */
+}
+
+.users-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray background for even rows */
+}
