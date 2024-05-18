@@ -9,7 +9,7 @@ $title = "Manage Users";
 include "includes/header.php";
 include "includes/db.php";
 
-// Fetch all users from the database
+// Fetches all users from the database
 $stmt = $pdo->query("SELECT * FROM Users");
 $users = $stmt->fetchAll();
 ?>
