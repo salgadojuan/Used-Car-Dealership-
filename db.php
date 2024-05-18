@@ -3,7 +3,7 @@
 $host = '127.0.0.1';
 $db = 'used_car_database';  // my database name
 $user = 'root';            // my database username
-$pass = '';                // my database password, if it's not set, leave it empty
+$pass = '';                // my database password
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
