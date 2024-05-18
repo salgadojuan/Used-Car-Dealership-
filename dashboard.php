@@ -16,9 +16,9 @@
 <nav class="side-navigation">
     <ul>
         <li><a href="index.php">Logout</a></li>
-        <li><a href="manageUsers.php">Manage Users</a></li> <!-- Added register link -->
+        <li><a href="manageUsers.php">Manage Users</a></li> 
         <li><a href="manageVehicles.php">Manage Vehicles</a></li>
-        <li><a href="manageInventory.php">Manage Inventory</a></li> <!-- Added register link -->
+        <li><a href="manageInventory.php">Manage Inventory</a></li> 
     </ul>
 </nav>
 
