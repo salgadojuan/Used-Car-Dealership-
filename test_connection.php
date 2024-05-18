@@ -1,5 +1,5 @@
 <?php
-include "includes/db.php"; // Include the database connection
+include "includes/db.php"; // database connection this page tests the connection and will echo "Database connection is successful!"
 
 try {
     $stmt = $pdo->query('SELECT 1');
