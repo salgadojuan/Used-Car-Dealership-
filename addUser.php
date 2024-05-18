@@ -7,7 +7,7 @@ if (!isset($_SESSION['username'])) {
 
 $title = "Add User";
 include "includes/header.php";
-include "includes/db.php"; // Include the database connection
+include "includes/db.php"; // the database connection
 
 $successMessage = "";
 
