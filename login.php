@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Check if the user exists in the database
+    // Checks if the user exists in the database
     $stmt = $pdo->prepare('SELECT * FROM users WHERE user_name = :username AND password = :password');
     $stmt->execute(['username' => $username, 'password' => $password]);
     $user = $stmt->fetch();
